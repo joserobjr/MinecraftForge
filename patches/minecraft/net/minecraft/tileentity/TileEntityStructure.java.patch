@@ -1,0 +1,9 @@
+--- ../src-base/minecraft/net/minecraft/tileentity/TileEntityStructure.java
++++ ../src-work/minecraft/net/minecraft/tileentity/TileEntityStructure.java
+@@ -641,5 +641,5 @@
+                 field_185115_e[tileentitystructure$mode.func_185110_a()] = tileentitystructure$mode;
+             }
+         }
+-    }
++    } @net.minecraftforge.fml.relauncher.SideOnly(Side.CLIENT) public net.minecraft.util.math.AxisAlignedBB getRenderBoundingBox() { return INFINITE_EXTENT_AABB; }
+ }
